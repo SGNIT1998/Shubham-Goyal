@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Small Apps</title>
+  
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!-- themify icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- Owl Carousel -->
+  <link href="plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
+  <!-- Owl Carousel Theme -->
+  <link href="plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
+  <!-- Fancy Box -->
+  <link href="plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+  <!-- AOS -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="images/favicon.png" rel="shortcut icon">
+    
+    
+      <style>
+          
+          div.scrollmenu {
+  background-color: #fff;
+  overflow:auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #fff;
+}
+           
+   
+          
+          
+          
+          
+          
+          #main div1 {
+    width: 25px;
+    height: 45px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    margin-left: -12.5px;
+    border-radius: 12px;
+}
+           #main div2 {
+                background-color: #f7b500;
+    width: 80px;
+               font-size: 13px;
+    height: 24px;
+    text-align: center;
+    position: absolute;
+    bottom: 190px;
+    left: 50%;
+    margin-left: -40px;
+                 border-radius: 5px;
+}
+           #point div2 {
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 12px;
+}
+          
+          
+          
+          
+          
+          
+          
+          
+          .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+         
+    </style>
+
+</head>
+
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+    
+<nav class="navbar main-nav navbar-expand-lg p-0">
+  <div class="container">
+    <a  style="margin-top: 10px ; margin-left: 10px" class="navbar-brand" href="index.html"><img src="images/logo1.png" alt="logo" width="200" height="70"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="ti-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown active dropdown-slide">
+          <a class="nav-link" href="#" data-toggle="dropdown">Travel
+            <span><i class="ti-angle-down"></i></span>
+          </a>
+          <!-- Dropdown list -->
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="index.html">About</a>
+            <a class="dropdown-item" href="Entertain.html">Stories</a>
+            <a class="dropdown-item" href="homepage-3.html">Blogs</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown dropdown-slide">
+          <a class="nav-link" href="#" data-toggle="dropdown">Pages
+            <span><i class="ti-angle-down"></i></span>
+          </a>
+          <!-- Dropdown list -->
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="team.html">Travel</a>
+            <a class="dropdown-item" href="career.html">Career</a>
+            <a class="dropdown-item" href="blog.html">Technology</a>
+            <a class="dropdown-item" href="blog-single.html">Awareness</a>
+            <a class="dropdown-item" href="privacy-policy.html">Culture</a>
+            <a class="dropdown-item" href="sign-in.html">Entertainment</a>
+            <a class="dropdown-item" href="FAQ.html">Lifestyle</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+    
+    <!-- Trigger/Open The Modal -->
+<!--<button id="myBtn">Open Modal</button>
+
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   
+  </div>
+
+</div>-->
+
+
+<!--============================
+=            Banner            =
+=============================-->
+<div class="section banner-full">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 justify-content-xs-center">
+				<div class="image"  data-aos="flip-right">
+                    <div id='main'>
+					<img class="img-fluid" src="images/feature/Travel.png" alt="Iphone-Black">
+                        <div2>
+                            <a href="#feature" class="mouse-hover"><p style="color: white">Explore</p></a>
+                        </div2>
+                        <div1 id='point'>
+                            <div2>
+                          <a href="#feature" class="mouse-hover">.</a> 
+                                </div2>
+                            </div1>
+                          </div>
+           
+				</div>
+			</div>
+			<div class="col-lg-8 align-self-center">
+				<div class="block">
+
+                    <a href="index.html"><h1 style="color: #f7b500">Readyme Travel </h1></a>
+
+					<h5>Let's Share or discover your thought, experience
+						<br>and memory at the moment and
+						<br>help other travelers.
+                    </h5>
+					<ul style="margin-top: 60px" class="list-inline app-badge">
+						<li class="list-inline-item">
+							<a href="#"><img src="images/app/facebook.jpeg" alt="Facebook"></a>
+						</li>
+						<li class="list-inline-item">
+							<a style="margin-left: 5px" href="#"><img src="images/app/Instagram.jpg" alt="Instagram"></a>
+						</li>
+					</ul>
+				
+                    
+                    <div class="post-meta">
+                        <h3 style="font-weight: bold">Highlights</h3>
+		<ul style="margin-top: 25px" class="list-inline post-tag">
+            <div class="scrollmenu">
+			<li style="text-align: center" class="list-inline-item">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODQ5MDM2MDI5OTY3NzQx?igshid=12zpta0k7u3n6"><img src="images/Highlights/Travel_Top%20Places.png" alt="Readyme Travel"></a>
+                 <h5 style="margin-top: 6px">Top Places</h5>
+			</li>
+			<li style="text-align: center" class="list-inline-item">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODQ5MDM2MDI5OTY3NzQx?igshid=12zpta0k7u3n6"><img src="images/Highlights/Travel_pollresult.png" alt="Readyme Travel"></a>
+                 <h5 style="margin-top: 6px">Poll Result</h5>
+			</li>
+           
+            <li style="text-align: center" class="list-inline-item">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODQ5MDM2MDI5OTY3NzQx?igshid=12zpta0k7u3n6"><img src="images/Highlights/Travel_todo.png" alt="Readyme Travel"></a>
+                 <h5 style="margin-top: 6px">Things to do</h5>
+			</li>
+            <li style="text-align: center" class="list-inline-item">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODQ5MDM2MDI5OTY3NzQx?igshid=12zpta0k7u3n6"><img src="images/Highlights/Travel_Hill%20station.png" alt="Readyme Travel"></a>
+                <h5 style="margin-top: 6px">Hill Station</h5>
+			</li>
+             <li  style="text-align: center" class="list-inline-item">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODQ5MDM2MDI5OTY3NzQx?igshid=12zpta0k7u3n6"><img src="images/Highlights/Travel_beaches.png" alt="Readyme Travel"></a>
+                 <h5 style="margin-top: 6px">Beaches</h5>
+			</li>
+            <li style="text-align: center" class="list-inline-item">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODQ5MDM2MDI5OTY3NzQx?igshid=12zpta0k7u3n6"><img src="images/Highlights/Travel_mahro_raj.jpeg" alt="Readyme Travel"></a>
+                 <h5 style="margin-top: 6px">Maharo Rajasthan</h5>
+			</li>
+           
+             <li style="text-align: center" class="list-inline-item">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODQ5MDM2MDI5OTY3NzQx?igshid=12zpta0k7u3n6"><img src="images/Highlights/Travel_transport2.png" alt="Readyme Travel"></a>
+                 <h5 style="margin-top: 6px">How to Reach</h5>
+			</li>
+            </div>
+		</ul>
+	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--====  End of Banner  ====-->
+
+    <section id="feature" class="section page-title">
+	<div class="container">
+		<div class="row">
+				<div  style="margin-top: -150px" class="col-12">
+				<!-- Call to action Community -->
+<div class="cta-community shadow">
+	<div class="content">
+		<!-- Title -->
+		<h2>Ready To Join Our Community</h2>
+		<!-- Description -->
+		<p>Let's Share your experience, thoughts and memories at a moment</p>
+	</div>
+	<div style ="margin-left: 25px" class="action-button">
+		<!-- Call Button -->
+		<a href="#" class="btn btn-main-md">Write a Post</a>
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Page Title  ====-->
+
+<!--======================================
+=            Featured Article            =
+=======================================-->
+
+<section  class="section featured-article">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<article class="featured">
+					<!-- Image -->
+				<div class="col-lg-4 col-md-6">
+				<!-- Post -->
+<article class="post-sm">
+	<!-- Post Image -->
+	<div class="post-thumb">
+		<a href="blog-single.html"><img class="img-fluid" src="images/blog/Travel_Sustainable_Tourism.jpg" alt="Post-Image"></a>		
+	</div>
+
+</article>
+			</div>
+					<!-- written-content -->
+					<div class="content">
+						<!-- Post Title -->
+						<h2><a href="Travel%20-%20Sustainable%20Tourism.html">Tourism's Plastic Pollution Problem</a></h2>
+						<!-- Tags -->
+						<ul class="list-inline post-tag">
+							<li class="list-inline-item">
+								<a href="Travel%20-%20Sustainable%20Tourism.html">Thomas Johnson</a>
+							</li>
+							<li class="list-inline-item">
+								August 8, 2017
+							</li>
+						</ul>
+						<!-- Post Body -->
+						<p>Plastic pollution is one of the major environmental challenges of our time, and tourism has an important role to play in contributing to the solution.
+
+Each year, an additional eight million tonnes of plastic end up in the world’s oceans where it is responsible for the deaths of up to one million sea birds, 100,000 sea mammals, marine turtles and countless fish.  
+
+With 80 per cent of all tourism taking place in coastal areas , plastic from the sector can be a large contributor to this pollution.
+
+During peak tourist season, marine litter in the Mediterranean region was found to increase by up to 40 per cent.
+
+In-land and urban tourism can also contribute to marine plastic pollution, with huge amounts of plastic pollution ending up in rivers and getting carried into the oceans .
+
+If current trends continue, our oceans could contain more plastic than fish by 2050.</p>
+                        <a class="btn btn-main-sm" href="blog-single.html">Read more</a>
+					</div>
+                    
+				</article>
+                 <div style="background-color: #f5f5f5;width: auto;height: 1px; margin-top: 15px">
+                </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Featured Article  ====-->
+
+<section class="post-grid section pt-0">
+	<div class="container">
+		<div class="row">
+	
+		
+			<div class="col-lg-4 col-md-6">
+				<!-- Post -->
+<article class="post-sm">
+	<!-- Post Image -->
+	<div class="post-thumb">
+		<a href="blog-single.html"><img class="img-fluid" src="images/blog/Travel_Bhangarh.jpeg" alt="Post-Image"></a>		
+	</div>
+	<!-- Post Title -->
+	<div class="post-title">
+		<h3><a href="blog-single.html">Mystery behind India's most haunted place Bhangarh fort, Rajasthan</a></h3>
+	</div>
+	<!-- Post Meta -->
+	<div class="post-meta">
+		<ul class="list-inline post-tag">
+			<li class="list-inline-item">
+				<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="author-thumb">
+			</li>
+			<li class="list-inline-item">
+				<a href="#">Thomas Johnson</a>
+			</li>
+			<li class="list-inline-item">
+				August 8, 2017
+			</li>
+		</ul>
+	</div>
+	<!-- Post Details -->
+	<div class="post-details">
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+	</div>
+    <div style="background-color: #f5f5f5;width: auto;height: 1px; margin-top: 10px">
+                </div>
+</article>
+                
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<!-- Post -->
+<article class="post-sm">
+	<!-- Post Image -->
+	<div class="post-thumb">
+		<a href="blog-single.html"><img class="img-fluid" src="images/blog/Travel_Wonders.jpg" alt="Post-Image"></a>		
+	</div>
+	<!-- Post Title -->
+	<div class="post-title">
+		<h3><a href="blog-single.html">Readyme shared a post on "The Seven Wonders of the world"</a></h3>
+	</div>
+	<!-- Post Meta -->
+	<div class="post-meta">
+		<ul class="list-inline post-tag">
+			<li class="list-inline-item">
+				<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="author-thumb">
+			</li>
+			<li class="list-inline-item">
+				<a href="#">Thomas Johnson</a>
+			</li>
+			<li class="list-inline-item">
+				August 8, 2017
+			</li>
+		</ul>
+	</div>
+	<!-- Post Details -->
+	<div class="post-details">
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+	</div>
+     <div style="background-color: #f5f5f5;width: auto;height: 1px; margin-top: 10px">
+                </div>
+</article>
+			</div>
+            <div class="col-lg-4 col-md-6">
+				<!-- Post -->
+<article class="post-sm">
+	<!-- Post Image -->
+	<div class="post-thumb">
+		<a href="blog-single.html"><img class="img-fluid" src="images/blog/Travel_To_Do.jpg" alt="Post-Image"></a>		
+	</div>
+	<!-- Post Title -->
+	<div class="post-title">
+		<h3><a href="blog-single.html">Everything you should do before you travel a tourism Place</a></h3>
+	</div>
+	<!-- Post Meta -->
+	<div class="post-meta">
+		<ul class="list-inline post-tag">
+			<li class="list-inline-item">
+				<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="author-thumb">
+			</li>
+			<li class="list-inline-item">
+				<a href="#">Thomas Johnson</a>
+			</li>
+			<li class="list-inline-item">
+				August 8, 2017
+			</li>
+		</ul>
+	</div>
+	<!-- Post Details -->
+	<div class="post-details">
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+	</div>
+     <div style="background-color: #f5f5f5;width: auto;height: 1px; margin-top: 10px">
+                </div>
+</article>
+			</div>
+            <div class="col-lg-4 col-md-6">
+				<!-- Post -->
+<article class="post-sm">
+	<!-- Post Image -->
+	<div class="post-thumb">
+		<a href="blog-single.html"><img class="img-fluid" src="images/blog/Travel_Macleodgang.jpg" alt="Post-Image"></a>		
+	</div>
+	<!-- Post Title -->
+	<div class="post-title">
+		<h3><a href="blog-single.html">Ready shared a post at Macleodganj, Himachal Pradesh</a></h3>
+	</div>
+	<!-- Post Meta -->
+	<div class="post-meta">
+		<ul class="list-inline post-tag">
+			<li class="list-inline-item">
+				<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="author-thumb">
+			</li>
+			<li class="list-inline-item">
+				<a href="#">Thomas Johnson</a>
+			</li>
+			<li class="list-inline-item">
+				August 8, 2017
+			</li>
+		</ul>
+	</div>
+	<!-- Post Details -->
+	<div class="post-details">
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+	</div>
+     <div style="background-color: #f5f5f5;width: auto;height: 1px; margin-top: 10px">
+                </div>
+</article>
+			</div>
+            <!-- Pagination 
+			<div class="col-12">
+				
+				<nav class="pagination-nav">
+				  <ul class="pagination">
+				    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+				    <li class="page-item"><a class="page-link" href="#">2</a></li>
+				    <li class="page-item"><a class="page-link" href="#">3</a></li>
+				    <li class="page-item">
+				      <a class="page-link" href="#" aria-label="Next">
+				        <span aria-hidden="true"><i class="ti-angle-right"></i></span>
+				        <span class="sr-only">Next</span>
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
+			</div>-->
+		</div>
+	</div>
+</section>
+    
+<!--============================
+=            Footer            =
+=============================-->
+
+<footer class="footer-classic">
+  <ul class="social-icons list-inline">
+    <li class="list-inline-item">
+      <a href="https://www.facebook.com/themefisher"><i class="ti-facebook"></i></a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://twitter.com/themefisher"><i class="ti-twitter"></i></a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://www.instagram.com/themefisher/"><i class="ti-instagram"></i></a>
+    </li>
+    <li class="list-inline-item">
+      <a href="https://dribbble.com/themefisher"><i class="ti-dribbble"></i></a>
+    </li>
+  </ul>
+  <ul class="footer-links list-inline">
+    <li class="list-inline-item">
+      <a href="#">Download</a>
+    </li>
+    <li class="list-inline-item">
+      <a href="blog.html">Blog</a>
+    </li>
+    <li class="list-inline-item">
+      <a href="privacy-policy.html">Privacy</a>
+    </li>
+    <li class="list-inline-item">
+      <a href="team.html">Developer</a>
+    </li>
+    <li class="list-inline-item">
+      <a href="contact.html">Support</a>
+    </li>
+    <li class="list-inline-item">
+      <a href="career.html">Career</a>
+    </li>
+  </ul>
+</footer>
+
+
+  <!-- JAVASCRIPTS -->
+  <script src="plugins/jquery/jquery.js"></script>
+  <script src="plugins/popper/popper.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+  <!-- google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+  
+  <script src="js/custom.js"></script>
+    <script>
+    
+    var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+        
+    </script>
+</body>
+
+</html>
